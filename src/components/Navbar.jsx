@@ -19,7 +19,7 @@ const Navbar = ({ cartCount, onCartClick, currentView, onViewChange }) => {
   ];
 
   return (
-    <nav className="h-[80px] lg:h-[100px] bg-white border-b border-border-main sticky top-0 z-[1001] flex items-center transition-all duration-300">
+    <nav className="h-[80px] lg:h-[100px] bg-white/70 backdrop-blur-lg border-b border-border-main sticky top-0 z-[1001] flex items-center transition-all duration-300">
       <div className="container mx-auto px-6 grid grid-cols-2 lg:grid-cols-[1fr_auto_1fr] items-center w-full relative">
         {/* Left: Logo */}
         <div className="flex items-center">
@@ -104,7 +104,7 @@ const Navbar = ({ cartCount, onCartClick, currentView, onViewChange }) => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: '-100%', opacity: 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed left-0 w-full bg-white border-b border-border-main p-8 z-[1000] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] lg:hidden top-[80px]"
+            className="fixed left-0 w-full bg-white/80 backdrop-blur-xl border-b border-border-main p-8 z-[1000] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] lg:hidden top-[80px]"
           >
             <ul className="flex flex-col gap-6 list-none p-0 m-0">
               {navLinks.map((link, i) => (
