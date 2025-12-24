@@ -84,7 +84,9 @@ const App = () => {
         >
           {currentView === 'home' ? (
             <div className="overflow-x-hidden">
-              <Hero />
+              <div id="home">
+                <Hero />
+              </div>
               <Brands />
               <Features />
 

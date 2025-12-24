@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "What is your return policy?",
-      answer: "We offer a 7-day return policy for products with manufacturer defects. The item must be in its original packaging and condition. Please contact our support team to initiate a return."
+      answer: "We offer a 7-day return policy for products with defects. The item must be in its original packaging and condition. Please contact our support team to initiate a return."
     }
   ];
 
@@ -55,7 +55,7 @@ const FAQ = () => {
               onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             >
               <div className="px-8 lg:px-10 py-7 lg:py-8 flex justify-between items-center gap-6">
-                <h3 className="text-xl lg:text-2xl font-bold m-0 text-black leading-tight tracking-tight">{faq.question}</h3>
+                <h3 className="text-lg lg:text-xl font-semibold m-0 text-black leading-tight tracking-tight">{faq.question}</h3>
                 <motion.span
                   animate={{ rotate: activeIndex === index ? 180 : 0 }}
                   className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0"

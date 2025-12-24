@@ -145,10 +145,9 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
           viewport={{ once: true }}
           className="mb-16 max-w-[800px]"
         >
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-left mb-6 text-black tracking-tight">Explore Our Collection</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-left mb-6 text-black tracking-tight">Shop with Us</h2>
           <p className="text-lg lg:text-xl text-text-muted leading-relaxed">
-            Premium laptops curated for performance and reliability. Click on any laptop for full details.
-            <span className="block mt-2 font-bold text-black opacity-80 underline decoration-primary decoration-2 underline-offset-4 italic">Strict limit of 6 per customer.</span>
+            Premium laptops(Brand new/UK used) curated for performance and reliability. Click on any laptop for full details.
           </p>
         </motion.div>
 
@@ -164,14 +163,14 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
               key={laptop.id}
               variants={itemVariants}
               whileHover={{ y: -10 }}
-              className="bg-white rounded-[32px] overflow-hidden border border-border-main transition-all duration-300 cursor-pointer flex flex-col hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:border-primary group"
+              className="bg-white overflow-hidden border border-border-main transition-all duration-300 cursor-pointer flex flex-col hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)] hover:border-primary group"
               onClick={() => setSelectedProduct(laptop)}
             >
               <div className="relative aspect-[16/11] bg-[#f8fafc] overflow-hidden">
                 <motion.img
                   src={laptop.img}
                   alt={laptop.name}
-                  className="w-full h-full object-cover p-2"
+                  className="w-full h-full object-cover"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.8 }}
                 />
@@ -185,7 +184,7 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">{laptop.name}</h3>
                   <div className="flex justify-between items-center">
                     <p className="text-2xl font-black text-primary">${laptop.price.toLocaleString()}</p>
-                    <div className="text-[11px] uppercase tracking-widest font-black text-text-muted bg-bg-offset px-4 py-1.5 rounded-full border border-border-main">Max 6</div>
+                    <div className="text-[11px] uppercase tracking-widest font-black text-text-muted bg-bg-offset px-4 py-1.5 rounded-full border border-border-main">5 left</div>
                   </div>
                 </div>
               </div>

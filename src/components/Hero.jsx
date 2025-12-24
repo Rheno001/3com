@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-80px)] lg:h-[calc(100vh-100px)] max-h-[800px] flex items-center relative text-white overflow-hidden mb-8">
+    <section className="h-[calc(100vh-80px)] lg:h-[calc(100vh-100px)] max-h-[800px] flex items-center relative text-white overflow-hidden">
       {/* Video Background */}
       <div className="absolute top-0 left-0 w-full h-full z-10">
         <iframe
