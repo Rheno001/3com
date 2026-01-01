@@ -9,7 +9,9 @@ import asusImg from '../assets/Asus-rog-trix.jpeg';
 import asusExtra from '../assets/Asus-rog-trix(2).jpeg';
 import asusROG from '../assets/Asus-ROG-Zeph.jpeg';
 import asusROG2 from '../assets/Asus-ROG(2).jpeg';
-
+import starlink from '../assets/starlink.jpeg';
+import starlink2 from '../assets/starlink2.jpeg';
+import starlink3 from '../assets/starlink3.jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -69,6 +71,32 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
         storage: '512GB SSD M.2 NVMe',
         display: '14" Full HD',
         keyboardlight: 'RGB',
+      }
+    },
+    {
+      id: 4,
+      name: 'SpaceX Starlink Mini Satellite Internet Kit 4th Gen ',
+      price: 420000,
+      img: starlink,
+      extraImgs: [
+        starlink2
+      ],
+      specs: {
+        model: '4th Gen',
+        details: 'High-Speed, Low Latency Phased Array Antenna – Portable Internet for RV, Camping, Boats, Remote Work & Off-Grid Locations',
+      }
+    },
+    {
+      id: 5,
+      name: 'SpaceX Starlink Gen 3 V4 Standard Kit',
+      price: 590000,
+      img: starlink,
+      extraImgs: [
+        starlink3
+      ],
+      specs: {
+        model: 'Version 4',
+        details: 'High-Speed, Low-Latency Internet (Latest Model) Ultra Portable WiFi Router - Elegant Design, Starlink Travel Router WiFi 6, Satellite Connectivity',
       }
     },
   ];
