@@ -24,7 +24,6 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       ],
       specs: {
         model: 'ALIENWARE 15 R3',
-        battery: 'Up to 22 hours',
         processor: 'Intel corei7(7th gen @2.90GHz. 4cores)',
         graphics: '8gb dedicated graphics(Nvidia GeForce GTX 1080 with Max-Q)',
         ram: '32gb RAM',
