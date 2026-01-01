@@ -71,7 +71,7 @@ const Cart = ({ isOpen, onClose, items, onRemove, onUpdateQuantity, onCheckout }
                         </div>
                         <div className="flex-1 space-y-2">
                           <h3 className="text-lg font-black leading-tight text-black">{item.name}</h3>
-                          <p className="font-extrabold text-xl text-primary">${item.price.toLocaleString()}</p>
+                          <p className="font-extrabold text-xl text-primary">₦{item.price.toLocaleString()}</p>
                           <div className="flex items-center gap-4 bg-gray-50 w-fit px-3 py-1.5 rounded-full border border-border-main">
                             <motion.button whileTap={{ scale: 0.8 }} className="text-xl font-black px-2 hover:text-primary" onClick={() => onUpdateQuantity(item.name, -1)}>-</motion.button>
                             <span className="font-black text-lg w-6 text-center">{item.quantity}</span>
@@ -101,7 +101,7 @@ const Cart = ({ isOpen, onClose, items, onRemove, onUpdateQuantity, onCheckout }
               >
                 <div className="flex justify-between text-2xl font-black mb-10 text-black">
                   <span>Subtotal</span>
-                  <span>${total.toFixed(2)}</span>
+                  <span>₦{total.toLocaleString()}</span>
                 </div>
                 <motion.button
                   whileHover={{ scale: 1.02 }}

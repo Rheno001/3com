@@ -65,7 +65,7 @@ const ProductModal = ({ isOpen, product, onClose, onAddToCart, cartQuantity }) =
                   <div className="space-y-3">
                     <h2 className="text-4xl lg:text-5xl font-black text-black leading-tight tracking-tight">{product.name}</h2>
                     <div className="flex items-center gap-4">
-                      <p className="text-3xl font-black text-primary">${product.price.toLocaleString()}</p>
+                      <p className="text-3xl font-black text-primary">₦{product.price.toLocaleString()}</p>
                       <span className="bg-gray-50 text-text-muted px-4 py-1.5 rounded-full border border-border-main text-sm font-black uppercase tracking-widest">In Stock</span>
                     </div>
                   </div>

@@ -58,10 +58,10 @@ const App = () => {
   const checkout = () => {
     const phoneNumber = "2348065449573";
     const orderDetails = cartItems
-      .map((item) => `${item.name} (x${item.quantity}) - $${item.price.toLocaleString()}`)
+      .map((item) => `${item.name} (x${item.quantity}) - ₦${item.price.toLocaleString()}`)
       .join("\n");
     const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    const message = encodeURIComponent(`Hello 3com, I'd like to place an order:\n\n${orderDetails}\n\nTotal: $${total.toLocaleString()}\n\nPlease confirm my order.`);
+    const message = encodeURIComponent(`Hello 3com, I'd like to place an order:\n\n${orderDetails}\n\nTotal: ₦${total.toLocaleString()}\n\nPlease confirm my order.`);
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
   };
 
@@ -115,7 +115,7 @@ const App = () => {
                         Friday Special
                       </div>
                       <h2 className="text-4xl lg:text-6xl font-black leading-[1.1]">35% off extra <br /><span className="text-primary italic">this weekend only</span></h2>
-                      <p className="text-lg opacity-70 max-w-[500px] leading-relaxed">Upgrade your workstation with our premium selection. Get an exclusive tech-kit gift with every purchase over $2000.</p>
+                      <p className="text-lg opacity-70 max-w-[500px] leading-relaxed">Upgrade your workstation with our premium selection. Get an exclusive tech-kit gift with every purchase over ₦3,000,000.</p>
                       <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
