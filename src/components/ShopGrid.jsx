@@ -7,6 +7,8 @@ import alienwareImg from '../assets/Alienware-15-R3.jpeg';
 import alienwareExtra from '../assets/Alienware-15-R3(2).jpeg';
 import asusImg from '../assets/Asus-rog-trix.jpeg';
 import asusExtra from '../assets/Asus-rog-trix(2).jpeg';
+import asusROG from '../assets/Asus-ROG-Zeph.jpeg';
+import asusROG2 from '../assets/Asus-ROG(2).jpeg';
 
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -23,12 +25,13 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       specs: {
         model: 'ALIENWARE 15 R3',
         battery: 'Up to 22 hours',
-        os: 'Intel corei7(7th gen @2.90GHz. 4cores)',
-        graphics: '8gb dedicated graphics(Nvidia GeForce)',
-        ram: '16gb RAM',
+        processor: 'Intel corei7(7th gen @2.90GHz. 4cores)',
+        graphics: '8gb dedicated graphics(Nvidia GeForce GTX 1080 with Max-Q)',
+        ram: '32gb RAM',
         storage: '512gb SSD + 1TB HDD',
         display: '15.6" Full HD',
         keyboardlight: 'RGB',
+        os: 'Licensed Windows 11',
       }
     },
     {
@@ -37,11 +40,11 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       price: 850000,
       img: asusImg,
       extraImgs: [
-        asusExtra,
-        'https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&q=80&w=1170'
+        asusExtra
       ],
       specs: {
         model: 'Asus ROG Strix',
+        processor: 'Intel corei7(9th gen @2.60GHz. 6cores)',
         os: 'Licensed Windows 11',
         graphics: '4GB Dedicated NVIDIA GeForce GTX 1650',
         ram: '32GB DDR4',
@@ -53,19 +56,20 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
     {
       id: 3,
       name: 'ASUS ROG Zephyrus G14',
-      price: 255840,
-      img: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&q=80&w=1170',
+      price: 800000,
+      img: asusROG,
       extraImgs: [
-        'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=1030',
-        'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=1171'
+        asusROG2
       ],
       specs: {
-        model: 'GA402XV',
-        battery: '8-10 hours',
-        os: 'Windows 11 Home',
-        graphics: 'RTX 4070 8GB',
-        ram: '16GB DDR5',
-        storage: '512GB SSD'
+        model: 'Asus ROG Zephyrus G14',
+        processor: 'AMD Ryzen 7(10th gen @3.20GHz. 8cores)',
+        os: 'Licensed Windows 11',
+        graphics: '4GB dedicated graphics(Nvidia Geforce GTX 1650)',
+        ram: '16GB DDR4',
+        storage: '512GB SSD M.2 NVMe',
+        display: '14" Full HD',
+        keyboardlight: 'RGB',
       }
     },
   ];
