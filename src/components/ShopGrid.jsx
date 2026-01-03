@@ -16,10 +16,10 @@ import starlink3 from '../assets/starlink3.jpeg';
 import starlink4 from '../assets/starlinkgen4v3.jpeg';
 import starlink5 from '../assets/starlinkgen4v3(2).jpeg';
 import starlink6 from '../assets/starlinkgen4v3(3).jpeg';
-import dell from '../assets/dell.jpeg';
-import dell2 from '../assets/dell(2).jpeg';
-import mac from '../assets/mac.jpeg';
-import mac1 from '../assets/mac(2).jpeg';
+import dell from '../assets/dell-latitude.jpeg';
+import dell2 from '../assets/dell-latitude(1).jpeg';
+import mac from '../assets/macbook2019.jpeg';
+import mac1 from '../assets/macbook2019(1).jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
