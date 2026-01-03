@@ -130,7 +130,7 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
     {
       id: 7,
       name: 'Macbook Pro 16 2019',
-      price: 12000000,
+      price: 1200000,
       img: mac,
       extraImgs: [
         mac1
