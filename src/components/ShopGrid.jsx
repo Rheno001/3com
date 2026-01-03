@@ -16,6 +16,8 @@ import starlink3 from '../assets/starlink3.jpeg';
 import starlink4 from '../assets/starlinkgen4v3.jpeg';
 import starlink5 from '../assets/starlinkgen4v3(2).jpeg';
 import starlink6 from '../assets/starlinkgen4v3(3).jpeg';
+import dell from '../assets/dell.jpeg';
+import dell2 from '../assets/dell(2).jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -104,6 +106,23 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       specs: {
         model: 'Version 4',
         details: 'High-Speed, Low-Latency Internet (Latest Model) Ultra Portable WiFi Router - Elegant Design, Starlink Travel Router WiFi 6, Satellite Connectivity',
+      }
+    },
+    {
+      id: 6,
+      name: 'Dell Latitude 3380',
+      price: 240000,
+      img: dell,
+      extraImgs: [
+        dell2
+      ],
+      specs: {
+        model: 'Dell Latitude 3380',
+        processor: 'Intel core i5 (7th gen @2.70GHz.)',
+        os: 'Licensed Windows 11',
+        ram: '8GB DDR4',
+        storage: '250GB SSD',
+        display: '13.3" Touch screen',
       }
     },
   ];
