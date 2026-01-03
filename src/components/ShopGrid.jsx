@@ -18,6 +18,8 @@ import starlink5 from '../assets/starlinkgen4v3(2).jpeg';
 import starlink6 from '../assets/starlinkgen4v3(3).jpeg';
 import dell from '../assets/dell.jpeg';
 import dell2 from '../assets/dell(2).jpeg';
+import mac from '../assets/mac.jpeg';
+import mac1 from '../assets/mac(2).jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -123,6 +125,25 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
         ram: '8GB DDR4',
         storage: '250GB SSD',
         display: '13.3" Touch screen',
+      }
+    },
+    {
+      id: 7,
+      name: 'Macbook Pro 16 2019',
+      price: 12000000,
+      img: mac,
+      extraImgs: [
+        mac1
+      ],
+      specs: {
+        model: 'Macbook Pro 16 2019, Touchbar/TouchID',
+        processor: 'Intel core i9 (8cores @2.30GHz.)',
+        os: 'Mac Os Sequoia upgradable to Mac Os Tahoe 26.2',
+        graphics: '8GB dedicated graphics(AMD Radeon Pro 5500m)',
+        ram: '32GB DDR4',
+        battery: 'Cycle count 210',
+        storage: '1terabyte SSD M.2 NVMe',
+        display: '16" screen Retina 4k display screen(3072 x 1920)',
       }
     },
   ];
