@@ -10,8 +10,12 @@ import asusExtra from '../assets/Asus-rog-trix(2).jpeg';
 import asusROG from '../assets/Asus-ROG-Zeph.jpeg';
 import asusROG2 from '../assets/Asus-ROG(2).jpeg';
 import starlink from '../assets/starlink.jpeg';
-import starlink2 from '../assets/starlink2.jpeg';
+import starlink1 from '../assets/starlinkgen4v3(main).jpeg';
+import starlinkmini from '../assets/starlinkmini.jpeg';
 import starlink3 from '../assets/starlink3.jpeg';
+import starlink4 from '../assets/starlinkgen4v3.jpeg';
+import starlink5 from '../assets/starlinkgen4v3(2).jpeg';
+import starlink6 from '../assets/starlinkgen4v3(3).jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -79,7 +83,7 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       price: 420000,
       img: starlink,
       extraImgs: [
-        starlink2
+        starlinkmini
       ],
       specs: {
         model: '4th Gen',
@@ -90,9 +94,12 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
       id: 5,
       name: 'SpaceX Starlink Gen 3 V4 Standard Kit',
       price: 590000,
-      img: starlink,
+      img: starlink1,
       extraImgs: [
-        starlink3
+        starlink3,
+        starlink4,
+        starlink5,
+        starlink6
       ],
       specs: {
         model: 'Version 4',
