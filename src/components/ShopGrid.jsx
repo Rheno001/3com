@@ -20,6 +20,8 @@ import dell from '../assets/dell-latitude.jpeg';
 import dell2 from '../assets/dell-latitude(1).jpeg';
 import mac from '../assets/macbook2019.jpeg';
 import mac1 from '../assets/macbook2019(1).jpeg';
+import mac20 from '../assets/MAC20.jpeg';
+import mac201 from '../assets/MAC201.jpeg';
 const ShopGrid = ({ onAddToCart, cartItems }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -144,6 +146,25 @@ const ShopGrid = ({ onAddToCart, cartItems }) => {
         battery: 'Cycle count 210',
         storage: '1terabyte SSD M.2 NVMe',
         display: '16" screen Retina 4k display screen(3072 x 1920)',
+      }
+    },
+    {
+      id: 8,
+      name: 'Macbook Pro 13" 2020',
+      price: 1050000,
+      img: mac20,
+      extraImgs: [
+        mac201
+      ],
+      specs: {
+        model: 'Macbook Pro 13-inch 2020 (Touchbar/TouchID)',
+        processor: 'M1 chip 8Core CPU',
+        os: 'Mac Os Tahoe 26.2',
+        graphics: '8 core GPU',
+        ram: '8GB DDR4',
+        battery: 'Cycle count-54',
+        storage: '500GB SSD',
+        display: '13.3"-inch Retina Display (2560  x 1600)',
       }
     },
   ];
